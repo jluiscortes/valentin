@@ -88,7 +88,7 @@ export default function Celebration() {
       {/* Sparkles */}
       <motion.div
         className="select-none"
-        style={{ fontSize: 'clamp(1rem, 3.5vw, 1.4rem)', marginBottom: 8, letterSpacing: '0.4em' }}
+        style={{ fontSize: 'clamp(1rem, 3.5vw, 1.4rem)', marginBottom: 12, letterSpacing: '0.4em' }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.6 }}
@@ -99,7 +99,7 @@ export default function Celebration() {
       {/* Title */}
       <motion.h2
         className="font-script drop-shadow-sm"
-        style={{ fontSize: 'clamp(2.5rem, 10vw, 4.5rem)', color: '#e11d48', marginBottom: 12, lineHeight: 1.2 }}
+        style={{ fontSize: 'clamp(2.5rem, 10vw, 4.5rem)', color: '#e11d48', marginBottom: 20, lineHeight: 1.2 }}
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.6 }}
@@ -109,7 +109,7 @@ export default function Celebration() {
 
       {/* Decorative divider */}
       <motion.div
-        style={{ marginBottom: 20 }}
+        style={{ marginBottom: 24 }}
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ delay: 0.6, duration: 0.8, ease: 'easeOut' }}
@@ -119,7 +119,7 @@ export default function Celebration() {
 
       {/* Love message */}
       <motion.p
-        style={{ color: '#fb7185', fontSize: 'clamp(1rem, 4vw, 1.5rem)', fontWeight: 300, lineHeight: 1.8, marginBottom: 12, maxWidth: 340 }}
+        style={{ color: '#fb7185', fontSize: 'clamp(1rem, 4vw, 1.5rem)', fontWeight: 300, lineHeight: 1.8, marginBottom: 20, maxWidth: 340 }}
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.8, duration: 0.6 }}
