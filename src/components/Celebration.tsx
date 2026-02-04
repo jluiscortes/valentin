@@ -104,7 +104,7 @@ export default function Celebration() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.6 }}
       >
-        ¡Este sábado será increíble!
+        ¡Ese sábado será increíble!
       </motion.h2>
 
       {/* Decorative divider */}
@@ -126,7 +126,7 @@ export default function Celebration() {
       >
         Sabía que dirías que sí 🥰
         <br />
-        Nos espera un sábado muy especial juntos.
+        Nos espera ese sábado muy especial juntos.
       </motion.p>
 
       {/* Sweet extra message */}
@@ -183,7 +183,7 @@ export default function Celebration() {
         transition={{ delay: 2.2, duration: 1 }}
       >
         <p style={{ color: '#fda4af', fontSize: '0.85rem', fontWeight: 300, marginBottom: 4 }}>
-          Sábado 14 💝 Te estaré esperando
+          Ese sábado 14 💝 Te estaré esperando
         </p>
         <p className="card-signature" style={{ opacity: 0.5, paddingTop: 2 }}>
           by Jorge
