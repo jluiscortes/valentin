@@ -66,8 +66,8 @@ export default function Celebration() {
       {/* Circular image with glow */}
       <motion.div
         style={{
-          width: 120,
-          height: 120,
+          width: 100,
+          height: 100,
           borderRadius: '50%',
           overflow: 'hidden',
           border: '3px solid rgba(253, 164, 175, 0.5)',
@@ -99,7 +99,7 @@ export default function Celebration() {
       {/* Title */}
       <motion.h2
         className="font-script drop-shadow-sm"
-        style={{ fontSize: 'clamp(2.5rem, 10vw, 4.5rem)', color: '#e11d48', marginBottom: 20, lineHeight: 1.2 }}
+        style={{ fontSize: 'clamp(1.8rem, 7vw, 3rem)', color: '#e11d48', marginBottom: 16, lineHeight: 1.2 }}
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.6 }}
@@ -143,7 +143,7 @@ export default function Celebration() {
       {/* Animated hearts row */}
       <motion.div
         className="select-none"
-        style={{ display: 'flex', gap: 12, fontSize: 'clamp(1.6rem, 6vw, 2.5rem)', marginBottom: 20 }}
+        style={{ display: 'flex', gap: 10, fontSize: 'clamp(1.4rem, 5vw, 2rem)', marginBottom: 16 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4, duration: 0.6 }}
@@ -167,7 +167,7 @@ export default function Celebration() {
       {/* Big heart at the end */}
       <motion.div
         className="select-none"
-        style={{ fontSize: 'clamp(4rem, 15vw, 7rem)', lineHeight: 1 }}
+        style={{ fontSize: 'clamp(3rem, 12vw, 5rem)', lineHeight: 1 }}
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1.3, 1] }}
         transition={{ delay: 1.7, duration: 0.8, times: [0, 0.6, 1] }}
