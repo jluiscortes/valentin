@@ -85,7 +85,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 380px;
+  max-width: 360px;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -135,7 +136,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 56px 32px 48px;
+  padding: 40px 24px 36px;
 }
 
 .card-divider {
@@ -265,6 +266,94 @@ body {
   display: inline-block;
   -webkit-animation: heart-float 1.5s ease-in-out infinite;
   animation: heart-float 1.5s ease-in-out infinite;
+}
+
+/* ─── Card glow effect ─── */
+@-webkit-keyframes card-glow {
+  0%, 100% {
+    box-shadow:
+      0 8px 40px rgba(251, 113, 133, 0.12),
+      0 2px 12px rgba(0, 0, 0, 0.04);
+  }
+  50% {
+    box-shadow:
+      0 12px 48px rgba(251, 113, 133, 0.22),
+      0 4px 20px rgba(253, 164, 175, 0.1),
+      0 0 0 1px rgba(253, 164, 175, 0.15);
+  }
+}
+
+@keyframes card-glow {
+  0%, 100% {
+    box-shadow:
+      0 8px 40px rgba(251, 113, 133, 0.12),
+      0 2px 12px rgba(0, 0, 0, 0.04);
+  }
+  50% {
+    box-shadow:
+      0 12px 48px rgba(251, 113, 133, 0.22),
+      0 4px 20px rgba(253, 164, 175, 0.1),
+      0 0 0 1px rgba(253, 164, 175, 0.15);
+  }
+}
+
+.invitation-card {
+  -webkit-animation: card-glow 4s ease-in-out infinite;
+  animation: card-glow 4s ease-in-out infinite;
+}
+
+/* ─── Seal pulse ─── */
+@-webkit-keyframes seal-pulse {
+  0%, 100% { box-shadow: 0 4px 16px rgba(251, 113, 133, 0.2), 0 0 0 3px rgba(253, 164, 175, 0.25); }
+  50% { box-shadow: 0 6px 24px rgba(251, 113, 133, 0.35), 0 0 0 5px rgba(253, 164, 175, 0.15); }
+}
+
+@keyframes seal-pulse {
+  0%, 100% { box-shadow: 0 4px 16px rgba(251, 113, 133, 0.2), 0 0 0 3px rgba(253, 164, 175, 0.25); }
+  50% { box-shadow: 0 6px 24px rgba(251, 113, 133, 0.35), 0 0 0 5px rgba(253, 164, 175, 0.15); }
+}
+
+.card-seal {
+  -webkit-animation: seal-pulse 3s ease-in-out infinite;
+  animation: seal-pulse 3s ease-in-out infinite;
+}
+
+/* ─── Gradient shimmer on divider ─── */
+@-webkit-keyframes divider-shimmer {
+  0% { background-position: -80px center; }
+  100% { background-position: 80px center; }
+}
+
+@keyframes divider-shimmer {
+  0% { background-position: -80px center; }
+  100% { background-position: 80px center; }
+}
+
+.card-divider {
+  background-size: 200% 100%;
+  -webkit-animation: divider-shimmer 3s ease-in-out infinite alternate;
+  animation: divider-shimmer 3s ease-in-out infinite alternate;
+}
+
+/* ─── Image hover glow ─── */
+@-webkit-keyframes img-glow {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes img-glow {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.card-image-glow {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.55), transparent);
+  pointer-events: none;
 }
 
 /* ─── Signature ─── */

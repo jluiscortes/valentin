@@ -7,15 +7,15 @@ interface HeroProps {
 export default function Hero({ onContinue }: HeroProps) {
   return (
     <motion.div
-      className="relative z-10 flex items-center justify-center px-4 sm:px-6 py-10"
-      style={{ minHeight: '100dvh' }}
+      className="relative z-10 flex items-center justify-center"
+      style={{ minHeight: '100dvh', padding: '40px 20px 20px' }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.8 }}
     >
       {/* Card wrapper for seal positioning */}
-      <div style={{ position: 'relative', width: '100%', maxWidth: 380 }}>
+      <div style={{ position: 'relative', width: '100%', maxWidth: 360, margin: '0 auto' }}>
         {/* Envelope seal - outside overflow:hidden */}
         <motion.div
           className="card-seal"
@@ -29,7 +29,7 @@ export default function Hero({ onContinue }: HeroProps) {
         {/* Invitation Card */}
         <motion.div
           className="invitation-card"
-          style={{ width: '100%', maxWidth: 380 }}
+          style={{ width: '100%', maxWidth: 360 }}
           initial={{ scale: 0.8, opacity: 0, rotateX: 15 }}
           animate={{ scale: 1, opacity: 1, rotateX: 0 }}
           transition={{ type: 'spring', stiffness: 80, damping: 20, delay: 0.2 }}
@@ -39,7 +39,7 @@ export default function Hero({ onContinue }: HeroProps) {
 
           {/* Card Image */}
           <motion.div
-            style={{ width: '100%' }}
+            style={{ width: '100%', position: 'relative' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
@@ -54,6 +54,7 @@ export default function Hero({ onContinue }: HeroProps) {
                 objectFit: 'cover',
               }}
             />
+            <div className="card-image-glow" />
           </motion.div>
 
           {/* Inner content */}
