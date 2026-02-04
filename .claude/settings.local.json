@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npx:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(nvm use:*)",
+      "Bash(npm run dev)",
+      "Bash(timeout:*)",
+      "WebSearch",
+      "Bash(claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest)",
+      "Bash(taskkill:*)",
+      "Bash(start \"\" \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\" --remote-debugging-port=9222 \"http://localhost:5173/valentin/\")",
+      "Bash(findstr:*)",
+      "Bash(claude mcp add chrome-devtools --scope user npx -y chrome-devtools-mcp@latest)",
+      "Bash(claude mcp add --help:*)",
+      "Bash(claude mcp add:*)",
+      "mcp__chrome-devtools__list_pages",
+      "mcp__chrome-devtools__navigate_page",
+      "mcp__chrome-devtools__take_screenshot",
+      "WebFetch(domain:es.pinterest.com)",
+      "Bash(dir:*)",
+      "mcp__chrome-devtools__take_snapshot",
+      "mcp__chrome-devtools__click",
+      "mcp__chrome-devtools__resize_page",
+      "mcp__chrome-devtools__wait_for",
+      "mcp__chrome-devtools__evaluate_script",
+      "mcp__chrome-devtools__hover",
+      "Bash(gh auth status:*)",
+      "Bash(where.exe:*)",
+      "Bash(winget install:*)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/GitHub CLI\")",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth status)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
