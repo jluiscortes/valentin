@@ -8,7 +8,6 @@ interface QuestionCardProps {
 export default function QuestionCard({ onYes }: QuestionCardProps) {
   const [noPosition, setNoPosition] = useState({ x: 0, y: 0 })
   const [noScale, setNoScale] = useState(1)
-  const [escaped, setEscaped] = useState(false)
   const [escapeCount, setEscapeCount] = useState(0)
   const noBtnRef = useRef<HTMLButtonElement>(null)
   const yesBtnRef = useRef<HTMLButtonElement>(null)
@@ -99,7 +98,6 @@ export default function QuestionCard({ onYes }: QuestionCardProps) {
       setNoPosition({ x: bestX, y: bestY })
     }
 
-    setEscaped(true)
     setNoScale(Math.max(0.85, noScale - 0.02))
     setEscapeCount((prev) => prev + 1)
   }, [noScale, noPosition])
