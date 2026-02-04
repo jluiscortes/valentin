@@ -104,7 +104,7 @@ export default function Celebration() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.6 }}
       >
-        ¡Feliz San Valentín!
+        ¡Este sábado será increíble!
       </motion.h2>
 
       {/* Decorative divider */}
@@ -126,7 +126,7 @@ export default function Celebration() {
       >
         Sabía que dirías que sí 🥰
         <br />
-        Este día es especial contigo.
+        Nos espera un sábado muy especial juntos.
       </motion.p>
 
       {/* Sweet extra message */}
@@ -137,7 +137,7 @@ export default function Celebration() {
         animate={{ y: 0, opacity: 0.85 }}
         transition={{ delay: 1.1, duration: 0.6 }}
       >
-        Te quiero mucho, corazoncito 🍓
+        Prepárate, corazoncito 🍓
       </motion.p>
 
       {/* Animated hearts row */}
@@ -183,7 +183,7 @@ export default function Celebration() {
         transition={{ delay: 2.2, duration: 1 }}
       >
         <p style={{ color: '#fda4af', fontSize: '0.85rem', fontWeight: 300, marginBottom: 4 }}>
-          Este sábado 14 💝 Juntos
+          Sábado 14 💝 Te estaré esperando
         </p>
         <p className="card-signature" style={{ opacity: 0.5, paddingTop: 2 }}>
           by Jorge

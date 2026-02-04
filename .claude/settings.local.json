@@ -46,7 +46,8 @@
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run watch 21683609006 --repo jluiscortes/valentin)",
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list --repo jluiscortes/valentin --limit 1)",
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run watch 21683748548 --repo jluiscortes/valentin)",
-      "mcp__chrome-devtools__emulate"
+      "mcp__chrome-devtools__emulate",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run watch 21683965311 --repo jluiscortes/valentin)"
     ]
   }
 }
