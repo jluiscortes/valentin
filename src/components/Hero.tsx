@@ -93,19 +93,49 @@ export default function Hero({ onContinue }: HeroProps) {
 
             {/* Message */}
             <motion.p
-              style={{ color: '#fb7185', fontSize: 'clamp(0.95rem, 3.5vw, 1.25rem)', fontWeight: 300, lineHeight: 1.7, marginBottom: 40, maxWidth: 280 }}
+              style={{ color: '#fb7185', fontSize: 'clamp(0.95rem, 3.5vw, 1.25rem)', fontWeight: 300, lineHeight: 1.7, marginBottom: 16, maxWidth: 280 }}
               initial={{ y: 15, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1.4, duration: 0.6 }}
             >
               Quiero que estés conmigo
               <br />
-              este 14 de febrero 💝
-              <br />
-              <span style={{ fontSize: '0.85em', opacity: 0.8 }}>
-                Tengo algo especial que preguntarte...
-              </span>
+              este sábado de San Valentín 💝
             </motion.p>
+
+            {/* Extra detail */}
+            <motion.p
+              style={{ color: '#fda4af', fontSize: 'clamp(0.8rem, 3vw, 0.95rem)', fontWeight: 300, lineHeight: 1.6, marginBottom: 12, maxWidth: 260 }}
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.6, duration: 0.6 }}
+            >
+              Preparé algo especial para los dos 🌹
+              <br />
+              <span style={{ opacity: 0.8 }}>Solo necesito que abras esto...</span>
+            </motion.p>
+
+            {/* Date badge */}
+            <motion.div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+                padding: '6px 16px',
+                background: 'rgba(253, 164, 175, 0.15)',
+                borderRadius: 20,
+                fontSize: '0.75rem',
+                color: '#e11d48',
+                fontWeight: 500,
+                letterSpacing: '0.05em',
+                marginBottom: 32,
+              }}
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 1.8, duration: 0.5 }}
+            >
+              📅 Sábado 14 de febrero
+            </motion.div>
 
             {/* CTA Button */}
             <motion.button

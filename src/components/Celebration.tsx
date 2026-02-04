@@ -183,7 +183,7 @@ export default function Celebration() {
         transition={{ delay: 2.2, duration: 1 }}
       >
         <p style={{ color: '#fda4af', fontSize: '0.85rem', fontWeight: 300, marginBottom: 4 }}>
-          14 de febrero 💝 Juntos
+          Este sábado 14 💝 Juntos
         </p>
         <p className="card-signature" style={{ opacity: 0.5, paddingTop: 2 }}>
           by Jorge

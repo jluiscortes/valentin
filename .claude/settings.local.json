@@ -41,7 +41,9 @@
       "Bash(git push:*)",
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/jluiscortes/valentin/pages -X POST -f build_type=workflow)",
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list --repo jluiscortes/valentin --limit 5)",
-      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run view 21683579179 --repo jluiscortes/valentin --log-failed)"
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run view 21683579179 --repo jluiscortes/valentin --log-failed)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list --repo jluiscortes/valentin --limit 3)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run watch 21683609006 --repo jluiscortes/valentin)"
     ]
   }
 }
