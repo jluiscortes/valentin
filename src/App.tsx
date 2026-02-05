@@ -11,7 +11,7 @@ function App() {
   const [stage, setStage] = useState<Stage>('hero')
 
   return (
-    <div className="relative w-full bg-gradient-to-b from-rose-50 via-white to-rose-100 overflow-hidden" style={{ height: '100dvh' }}>
+    <div className="relative w-full bg-gradient-to-b from-rose-50 via-white to-rose-100" style={{ minHeight: '100dvh' }}>
       <FloatingHearts />
       <AnimatePresence mode="wait">
         {stage === 'hero' && (
